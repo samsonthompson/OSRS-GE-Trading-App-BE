@@ -1,33 +1,37 @@
 import json
-from datetime import datetime
+from datetime import datetime, UTC
 
 def analyze_timestamps(data):
-    # Print the structure of data for debugging
-    print("Data structure:", data)
-    
     # Extract timestamps
-    timestamps = [entry['timestamp'] for entry in data]  # Access the 'timestamp' key directly
-    human_readable_dates = [datetime.utcfromtimestamp(ts / 1000).strftime('%Y-%m-%d %H:%M:%S') for ts in timestamps]
+    timestamps = [entry['timestamp'] for entry in data]
     
-    # Calculate intervals between timestamps
+    # Calculate first and last timestamps
+    first_timestamp = timestamps[0]
+    last_timestamp = timestamps[-1]
+    first_date = datetime.fromtimestamp(first_timestamp / 1000, UTC).strftime('%Y-%m-%d %H:%M:%S')
+    last_date = datetime.fromtimestamp(last_timestamp / 1000, UTC).strftime('%Y-%m-%d %H:%M:%S')
+    
+    # Calculate total time range
+    total_days = (last_timestamp - first_timestamp) / (1000 * 86400)  
+    # Convert ms to days
+    total_weeks = total_days / 7 
+    
+    # Calculate interval between data points
     intervals = [timestamps[i] - timestamps[i - 1] for i in range(1, len(timestamps))]
+    avg_interval_days = (sum(intervals) / len(intervals)) / (1000 * 86400) 
     
-    # Print the first few timestamps and intervals
-    print("First few timestamps and their human-readable dates:")
-    for ts, date in zip(timestamps[:5], human_readable_dates[:5]):
-        print(f"Timestamp: {ts}, Date: {date}")
-    
-    print("\nIntervals between timestamps (in seconds):")
-    print(intervals[:5])
+    print(f"\nData Range Summary:")
+    print(f"First entry: {first_date}")
+    print(f"Last entry: {last_date}")
+    print(f"Total time span: {total_days:.1f} days ({total_weeks:.1f} weeks)")
+    print(f"Average interval between entries: {avg_interval_days:.1f} days")
 
 def main():
-    # Load the historical data from the JSON file
     with open('historical_data.json', 'r') as file:
         historical_data = json.load(file)
     
-    # Analyze the timestamps
     for item_id, data in historical_data.items():
-        print(f"\nAnalyzing data for item ID: {item_id}")
+        print(f"\nAnalyzing item ID: {item_id}")
         analyze_timestamps(data)
 
 if __name__ == "__main__":
