@@ -1,5 +1,6 @@
-import json
 import requests
+import json
+from datetime import datetime, timezone
 
 def fetch_historical_data(item_id):
     url = f"https://api.weirdgloop.org/exchange/history/osrs/all?id={item_id}"
@@ -8,26 +9,26 @@ def fetch_historical_data(item_id):
         response.raise_for_status()
         data = response.json()
         return data
-    except requests.exceptions.HTTPError as http_err:
-        print(f"HTTP error occurred: {http_err}")
-    except Exception as err:
-        print(f"Other error occurred: {err}")
-    return None
+    except Exception as e:
+        print(f"Error: {e}")
+        return None
 
 def main():
-    # Example item ID for Coal (453)
-    item_id = 2
-
-    
-    # Fetch all historical data for the item
+    item_id = 327  # Example item ID
     all_data = fetch_historical_data(item_id)
-    
-    if all_data:
-        # Save the data to a JSON file
-        file_name = f"historical_data_{item_id}.json"
-        with open(file_name, 'w') as file:
-            json.dump(all_data, file, indent=4)
-        print(f"Data for item ID {item_id} has been saved to {file_name}")
+    print("Raw API response:")
+    print(json.dumps(all_data, indent=2))
+
+    if all_data is not None:
+        # Print the first 5 entries with human-readable timestamps
+        item_history = all_data.get(str(item_id), [])
+        print("\nFirst 5 entries with readable timestamps:")
+        for entry in item_history[:5]:
+            ts = entry['timestamp']
+            date_str = datetime.fromtimestamp(ts / 1000, tz=timezone.utc).strftime('%Y-%m-%d %H:%M:%S')
+            print(f"Timestamp: {ts} -> {date_str}, Price: {entry['price']}, Volume: {entry['volume']}")
+    else:
+        print("No data returned from API.")
 
 if __name__ == "__main__":
     main()
