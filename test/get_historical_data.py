@@ -14,12 +14,17 @@ def fetch_historical_data(item_id):
         return None
 
 def main():
-    item_id = 327  # Example item ID
+    item_id = 327  # Changed to item 327 for more interesting trading data
     all_data = fetch_historical_data(item_id)
     print("Raw API response:")
     print(json.dumps(all_data, indent=2))
 
     if all_data is not None:
+        # Save the data to a JSON file
+        with open('historical_data_327.json', 'w') as f:
+            json.dump(all_data, f, indent=2)
+        print("Saved historical data to historical_data_327.json")
+
         # Print the first 5 entries with human-readable timestamps
         item_history = all_data.get(str(item_id), [])
         print("\nFirst 5 entries with readable timestamps:")
