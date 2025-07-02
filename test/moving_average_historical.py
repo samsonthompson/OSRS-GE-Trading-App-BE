@@ -14,48 +14,55 @@ item_history = data[item_id]
 df = pd.DataFrame(item_history)
 df['datetime'] = pd.to_datetime(df['timestamp'], unit='ms')
 
-# Calculate multiple moving averages
-df['ma_14'] = df['price'].rolling(window=14).mean()
-df['ma_30'] = df['price'].rolling(window=30).mean()
-df['ma_90'] = df['price'].rolling(window=90).mean()
-df['ma_100'] = df['price'].rolling(window=100).mean()
-df['ma_180'] = df['price'].rolling(window=180).mean()
-df['ma_365'] = df['price'].rolling(window=365).mean()
+# Periods to calculate
+periods = [5, 7, 14, 20, 90, 180, 365]
 
-# Prepare output: convert timestamp to ISO date+time and NaN to None
+# Calculate moving averages, stds, and Bollinger Bands for each period
+for period in periods:
+    df[f'ma_{period}'] = df['price'].rolling(window=period).mean()
+    df[f'std_{period}'] = df['price'].rolling(window=period).std()
+    df[f'bollinger_upper_{period}'] = df[f'ma_{period}'] + 2 * df[f'std_{period}']
+    df[f'bollinger_lower_{period}'] = df[f'ma_{period}'] - 2 * df[f'std_{period}']
+
+def get_scalar(val):
+    if isinstance(val, (np.ndarray, pd.Series)):
+        return round(float(val.item()), 2) if val.size > 0 else None
+    return round(float(val), 2) if pd.notna(val) else None
+
+# Prepare output in Option 4 nested format
 output_records = []
 for _, row in df.iterrows():
+    # Ensure row['datetime'] is a scalar Timestamp
+    dt = row['datetime']
+    if isinstance(dt, np.ndarray):
+        dt = pd.to_datetime(dt[0])
+    indicators = {
+        'ma': {str(period): get_scalar(row[f'ma_{period}']) for period in periods},
+        'std': {str(period): get_scalar(row[f'std_{period}']) for period in periods},
+        'bollinger': {
+            str(period): {
+                'upper': get_scalar(row[f'bollinger_upper_{period}']),
+                'lower': get_scalar(row[f'bollinger_lower_{period}'])
+            } for period in periods
+        }
+    }
     record = {
-        'id': row['id'],
-        'price': row['price'],
-        'volume': row['volume'] if not pd.isna(row['volume']) else None,
-        'date': row['datetime'].strftime('%Y-%m-%dT%H:%M:%S'),
-        'ma_14': row['ma_14'] if not pd.isna(row['ma_14']) else None,
-        'ma_30': row['ma_30'] if not pd.isna(row['ma_30']) else None,
-        'ma_90': row['ma_90'] if not pd.isna(row['ma_90']) else None,
-        'ma_100': row['ma_100'] if not pd.isna(row['ma_100']) else None,
-        'ma_180': row['ma_180'] if not pd.isna(row['ma_180']) else None,
-        'ma_365': row['ma_365'] if not pd.isna(row['ma_365']) else None,
+        'date': dt.strftime('%Y-%m-%d'),
+        'price': get_scalar(row['price']),
+        'indicators': indicators
     }
     output_records.append(record)
 
-output_path = 'historical_data_327_with_ma.json'
+output_path = 'historical_data_327_enriched.json'
 with open(output_path, 'w') as f:
-    json.dump({item_id: output_records}, f, indent=2)
-print(f"Saved DataFrame with multiple moving averages and ISO date+time to {output_path}")
+    json.dump(output_records, f, indent=2)
+print(f"Saved enriched data with nested indicators to {output_path}")
 
-# Print first few rows from 2023 onwards
-print(df[(df['datetime'] > '2023-01-01')][['datetime', 'price', 'ma_14', 'ma_30', 'ma_90', 'ma_100', 'ma_180', 'ma_365']].head(15))
-
-# Plot macro view
+# Plot macro view (keep this section for now)
 plt.figure(figsize=(14,7))
 plt.plot(df['datetime'], df['price'], label='Price', alpha=0.5)
-plt.plot(df['datetime'], df['ma_14'], label='14-day MA')
-plt.plot(df['datetime'], df['ma_30'], label='30-day MA')
-plt.plot(df['datetime'], df['ma_90'], label='90-day MA')
-plt.plot(df['datetime'], df['ma_100'], label='100-day MA')
-plt.plot(df['datetime'], df['ma_180'], label='180-day MA', linewidth=2)
-plt.plot(df['datetime'], df['ma_365'], label='365-day MA', linewidth=2)
+for period in periods:
+    plt.plot(df['datetime'], df[f'ma_{period}'], label=f'{period}-day MA')
 plt.legend()
 plt.title('Macro View: Price and Multiple Moving Averages')
 plt.xlabel('Date')
