@@ -24,6 +24,18 @@ for period in periods:
     df[f'bollinger_upper_{period}'] = df[f'ma_{period}'] + 2 * df[f'std_{period}']
     df[f'bollinger_lower_{period}'] = df[f'ma_{period}'] - 2 * df[f'std_{period}']
 
+# Add RSI calculation for selected periods
+rsi_periods = [7, 14]
+def calculate_rsi(series, period):
+    delta = series.diff()
+    gain = (delta.where(delta > 0, 0)).rolling(window=period).mean()
+    loss = (-delta.where(delta < 0, 0)).rolling(window=period).mean()
+    rs = gain / loss
+    rsi = 100 - (100 / (1 + rs))
+    return rsi
+for period in rsi_periods:
+    df[f'rsi_{period}'] = calculate_rsi(df['price'], period)
+
 def get_scalar(val):
     if isinstance(val, (np.ndarray, pd.Series)):
         return round(float(val.item()), 2) if val.size > 0 else None
@@ -44,7 +56,8 @@ for _, row in df.iterrows():
                 'upper': get_scalar(row[f'bollinger_upper_{period}']),
                 'lower': get_scalar(row[f'bollinger_lower_{period}'])
             } for period in periods
-        }
+        },
+        'rsi': {str(period): get_scalar(row[f'rsi_{period}']) for period in rsi_periods}
     }
     record = {
         'date': dt.strftime('%Y-%m-%d'),
