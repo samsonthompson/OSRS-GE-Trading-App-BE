@@ -1,0 +1,922 @@
+[
+  {
+    "entry_date": "2015-08-04",
+    "entry_price": 6.0,
+    "exit_date": "2015-08-22",
+    "exit_price": 6.0,
+    "profit": 0.0,
+    "cumulative_profit": 0.0
+  },
+  {
+    "entry_date": "2015-08-30",
+    "entry_price": 6.0,
+    "exit_date": "2015-09-18",
+    "exit_price": 5.0,
+    "profit": -1.0,
+    "cumulative_profit": -1.0
+  },
+  {
+    "entry_date": "2015-10-06",
+    "entry_price": 6.0,
+    "exit_date": "2015-10-21",
+    "exit_price": 7.0,
+    "profit": 1.0,
+    "cumulative_profit": 0.0
+  },
+  {
+    "entry_date": "2015-11-01",
+    "entry_price": 8.0,
+    "exit_date": "2015-11-18",
+    "exit_price": 10.0,
+    "profit": 2.0,
+    "cumulative_profit": 2.0
+  },
+  {
+    "entry_date": "2015-12-06",
+    "entry_price": 10.0,
+    "exit_date": "2015-12-30",
+    "exit_price": 18.0,
+    "profit": 8.0,
+    "cumulative_profit": 10.0
+  },
+  {
+    "entry_date": "2016-02-07",
+    "entry_price": 12.0,
+    "exit_date": "2016-02-25",
+    "exit_price": 15.0,
+    "profit": 3.0,
+    "cumulative_profit": 13.0
+  },
+  {
+    "entry_date": "2016-03-30",
+    "entry_price": 12.0,
+    "exit_date": "2016-04-10",
+    "exit_price": 11.0,
+    "profit": -1.0,
+    "cumulative_profit": 12.0
+  },
+  {
+    "entry_date": "2016-04-21",
+    "entry_price": 11.0,
+    "exit_date": "2016-04-24",
+    "exit_price": 10.0,
+    "profit": -1.0,
+    "cumulative_profit": 11.0
+  },
+  {
+    "entry_date": "2016-05-08",
+    "entry_price": 11.0,
+    "exit_date": "2016-05-23",
+    "exit_price": 11.0,
+    "profit": 0.0,
+    "cumulative_profit": 11.0
+  },
+  {
+    "entry_date": "2016-05-24",
+    "entry_price": 12.0,
+    "exit_date": "2016-06-12",
+    "exit_price": 13.0,
+    "profit": 1.0,
+    "cumulative_profit": 12.0
+  },
+  {
+    "entry_date": "2016-07-18",
+    "entry_price": 12.0,
+    "exit_date": "2016-08-23",
+    "exit_price": 20.0,
+    "profit": 8.0,
+    "cumulative_profit": 20.0
+  },
+  {
+    "entry_date": "2016-10-25",
+    "entry_price": 10.0,
+    "exit_date": "2017-01-15",
+    "exit_price": 13.0,
+    "profit": 3.0,
+    "cumulative_profit": 23.0
+  },
+  {
+    "entry_date": "2017-01-30",
+    "entry_price": 14.0,
+    "exit_date": "2017-02-03",
+    "exit_price": 13.0,
+    "profit": -1.0,
+    "cumulative_profit": 22.0
+  },
+  {
+    "entry_date": "2017-03-30",
+    "entry_price": 13.0,
+    "exit_date": "2017-06-07",
+    "exit_price": 25.0,
+    "profit": 12.0,
+    "cumulative_profit": 34.0
+  },
+  {
+    "entry_date": "2017-06-10",
+    "entry_price": 26.0,
+    "exit_date": "2017-06-24",
+    "exit_price": 28.0,
+    "profit": 2.0,
+    "cumulative_profit": 36.0
+  },
+  {
+    "entry_date": "2017-08-10",
+    "entry_price": 23.0,
+    "exit_date": "2017-08-11",
+    "exit_price": 22.0,
+    "profit": -1.0,
+    "cumulative_profit": 35.0
+  },
+  {
+    "entry_date": "2017-09-22",
+    "entry_price": 20.0,
+    "exit_date": "2017-09-23",
+    "exit_price": 19.0,
+    "profit": -1.0,
+    "cumulative_profit": 34.0
+  },
+  {
+    "entry_date": "2017-09-27",
+    "entry_price": 20.0,
+    "exit_date": "2017-10-05",
+    "exit_price": 19.0,
+    "profit": -1.0,
+    "cumulative_profit": 33.0
+  },
+  {
+    "entry_date": "2017-10-30",
+    "entry_price": 14.0,
+    "exit_date": "2017-11-13",
+    "exit_price": 15.0,
+    "profit": 1.0,
+    "cumulative_profit": 34.0
+  },
+  {
+    "entry_date": "2017-12-18",
+    "entry_price": 16.0,
+    "exit_date": "2018-01-23",
+    "exit_price": 28.0,
+    "profit": 12.0,
+    "cumulative_profit": 46.0
+  },
+  {
+    "entry_date": "2018-02-12",
+    "entry_price": 23.0,
+    "exit_date": "2018-02-24",
+    "exit_price": 22.0,
+    "profit": -1.0,
+    "cumulative_profit": 45.0
+  },
+  {
+    "entry_date": "2018-03-12",
+    "entry_price": 20.0,
+    "exit_date": "2018-04-09",
+    "exit_price": 42.0,
+    "profit": 22.0,
+    "cumulative_profit": 67.0
+  },
+  {
+    "entry_date": "2018-05-23",
+    "entry_price": 25.0,
+    "exit_date": "2018-05-26",
+    "exit_price": 24.0,
+    "profit": -1.0,
+    "cumulative_profit": 66.0
+  },
+  {
+    "entry_date": "2018-05-28",
+    "entry_price": 25.0,
+    "exit_date": "2018-05-29",
+    "exit_price": 24.0,
+    "profit": -1.0,
+    "cumulative_profit": 65.0
+  },
+  {
+    "entry_date": "2018-06-06",
+    "entry_price": 25.0,
+    "exit_date": "2018-07-01",
+    "exit_price": 41.0,
+    "profit": 16.0,
+    "cumulative_profit": 81.0
+  },
+  {
+    "entry_date": "2018-09-20",
+    "entry_price": 30.0,
+    "exit_date": "2018-09-28",
+    "exit_price": 29.0,
+    "profit": -1.0,
+    "cumulative_profit": 80.0
+  },
+  {
+    "entry_date": "2018-10-03",
+    "entry_price": 32.0,
+    "exit_date": "2018-10-08",
+    "exit_price": 30.0,
+    "profit": -2.0,
+    "cumulative_profit": 78.0
+  },
+  {
+    "entry_date": "2018-10-11",
+    "entry_price": 31.0,
+    "exit_date": "2018-10-30",
+    "exit_price": 35.0,
+    "profit": 4.0,
+    "cumulative_profit": 82.0
+  },
+  {
+    "entry_date": "2018-11-16",
+    "entry_price": 30.0,
+    "exit_date": "2018-11-21",
+    "exit_price": 25.0,
+    "profit": -5.0,
+    "cumulative_profit": 77.0
+  },
+  {
+    "entry_date": "2019-01-26",
+    "entry_price": 12.0,
+    "exit_date": "2019-03-07",
+    "exit_price": 32.0,
+    "profit": 20.0,
+    "cumulative_profit": 97.0
+  },
+  {
+    "entry_date": "2019-03-23",
+    "entry_price": 29.0,
+    "exit_date": "2019-04-20",
+    "exit_price": 45.0,
+    "profit": 16.0,
+    "cumulative_profit": 113.0
+  },
+  {
+    "entry_date": "2019-05-01",
+    "entry_price": 45.0,
+    "exit_date": "2019-05-02",
+    "exit_price": 44.0,
+    "profit": -1.0,
+    "cumulative_profit": 112.0
+  },
+  {
+    "entry_date": "2019-05-12",
+    "entry_price": 43.0,
+    "exit_date": "2019-05-13",
+    "exit_price": 42.0,
+    "profit": -1.0,
+    "cumulative_profit": 111.0
+  },
+  {
+    "entry_date": "2019-05-15",
+    "entry_price": 44.0,
+    "exit_date": "2019-05-17",
+    "exit_price": 41.0,
+    "profit": -3.0,
+    "cumulative_profit": 108.0
+  },
+  {
+    "entry_date": "2019-05-28",
+    "entry_price": 41.0,
+    "exit_date": "2019-05-31",
+    "exit_price": 40.0,
+    "profit": -1.0,
+    "cumulative_profit": 107.0
+  },
+  {
+    "entry_date": "2019-06-02",
+    "entry_price": 40.0,
+    "exit_date": "2019-07-10",
+    "exit_price": 39.0,
+    "profit": -1.0,
+    "cumulative_profit": 106.0
+  },
+  {
+    "entry_date": "2019-07-25",
+    "entry_price": 39.0,
+    "exit_date": "2019-08-13",
+    "exit_price": 45.0,
+    "profit": 6.0,
+    "cumulative_profit": 112.0
+  },
+  {
+    "entry_date": "2019-08-14",
+    "entry_price": 46.0,
+    "exit_date": "2019-08-16",
+    "exit_price": 45.0,
+    "profit": -1.0,
+    "cumulative_profit": 111.0
+  },
+  {
+    "entry_date": "2019-08-19",
+    "entry_price": 49.0,
+    "exit_date": "2019-08-20",
+    "exit_price": 46.0,
+    "profit": -3.0,
+    "cumulative_profit": 108.0
+  },
+  {
+    "entry_date": "2019-08-26",
+    "entry_price": 48.0,
+    "exit_date": "2019-09-06",
+    "exit_price": 49.0,
+    "profit": 1.0,
+    "cumulative_profit": 109.0
+  },
+  {
+    "entry_date": "2019-09-08",
+    "entry_price": 51.0,
+    "exit_date": "2019-10-03",
+    "exit_price": 68.0,
+    "profit": 17.0,
+    "cumulative_profit": 126.0
+  },
+  {
+    "entry_date": "2019-11-01",
+    "entry_price": 47.0,
+    "exit_date": "2019-12-11",
+    "exit_price": 59.0,
+    "profit": 12.0,
+    "cumulative_profit": 138.0
+  },
+  {
+    "entry_date": "2020-01-23",
+    "entry_price": 33.0,
+    "exit_date": "2020-02-06",
+    "exit_price": 35.0,
+    "profit": 2.0,
+    "cumulative_profit": 140.0
+  },
+  {
+    "entry_date": "2020-02-22",
+    "entry_price": 33.0,
+    "exit_date": "2020-02-23",
+    "exit_price": 32.0,
+    "profit": -1.0,
+    "cumulative_profit": 139.0
+  },
+  {
+    "entry_date": "2020-02-24",
+    "entry_price": 33.0,
+    "exit_date": "2020-04-25",
+    "exit_price": 73.0,
+    "profit": 40.0,
+    "cumulative_profit": 179.0
+  },
+  {
+    "entry_date": "2020-04-26",
+    "entry_price": 75.0,
+    "exit_date": "2020-04-30",
+    "exit_price": 72.0,
+    "profit": -3.0,
+    "cumulative_profit": 176.0
+  },
+  {
+    "entry_date": "2020-05-26",
+    "entry_price": 59.0,
+    "exit_date": "2020-06-05",
+    "exit_price": 58.0,
+    "profit": -1.0,
+    "cumulative_profit": 175.0
+  },
+  {
+    "entry_date": "2020-06-21",
+    "entry_price": 55.0,
+    "exit_date": "2020-07-07",
+    "exit_price": 60.0,
+    "profit": 5.0,
+    "cumulative_profit": 180.0
+  },
+  {
+    "entry_date": "2020-08-04",
+    "entry_price": 58.0,
+    "exit_date": "2020-08-05",
+    "exit_price": 56.0,
+    "profit": -2.0,
+    "cumulative_profit": 178.0
+  },
+  {
+    "entry_date": "2020-09-04",
+    "entry_price": 49.0,
+    "exit_date": "2020-09-06",
+    "exit_price": 47.0,
+    "profit": -2.0,
+    "cumulative_profit": 176.0
+  },
+  {
+    "entry_date": "2020-09-10",
+    "entry_price": 48.0,
+    "exit_date": "2020-09-13",
+    "exit_price": 45.0,
+    "profit": -3.0,
+    "cumulative_profit": 173.0
+  },
+  {
+    "entry_date": "2020-09-21",
+    "entry_price": 47.0,
+    "exit_date": "2020-09-30",
+    "exit_price": 47.0,
+    "profit": 0.0,
+    "cumulative_profit": 173.0
+  },
+  {
+    "entry_date": "2020-10-24",
+    "entry_price": 44.0,
+    "exit_date": "2020-11-07",
+    "exit_price": 43.0,
+    "profit": -1.0,
+    "cumulative_profit": 172.0
+  },
+  {
+    "entry_date": "2020-11-09",
+    "entry_price": 45.0,
+    "exit_date": "2020-11-13",
+    "exit_price": 44.0,
+    "profit": -1.0,
+    "cumulative_profit": 171.0
+  },
+  {
+    "entry_date": "2020-11-20",
+    "entry_price": 45.0,
+    "exit_date": "2020-12-06",
+    "exit_price": 50.0,
+    "profit": 5.0,
+    "cumulative_profit": 176.0
+  },
+  {
+    "entry_date": "2020-12-24",
+    "entry_price": 46.0,
+    "exit_date": "2020-12-28",
+    "exit_price": 45.0,
+    "profit": -1.0,
+    "cumulative_profit": 175.0
+  },
+  {
+    "entry_date": "2020-12-30",
+    "entry_price": 46.0,
+    "exit_date": "2020-12-31",
+    "exit_price": 45.0,
+    "profit": -1.0,
+    "cumulative_profit": 174.0
+  },
+  {
+    "entry_date": "2021-01-01",
+    "entry_price": 46.0,
+    "exit_date": "2021-01-03",
+    "exit_price": 45.0,
+    "profit": -1.0,
+    "cumulative_profit": 173.0
+  },
+  {
+    "entry_date": "2021-02-02",
+    "entry_price": 36.0,
+    "exit_date": "2021-03-07",
+    "exit_price": 56.0,
+    "profit": 20.0,
+    "cumulative_profit": 193.0
+  },
+  {
+    "entry_date": "2021-03-26",
+    "entry_price": 46.0,
+    "exit_date": "2021-03-27",
+    "exit_price": 45.0,
+    "profit": -1.0,
+    "cumulative_profit": 192.0
+  },
+  {
+    "entry_date": "2021-03-28",
+    "entry_price": 45.0,
+    "exit_date": "2021-03-31",
+    "exit_price": 44.0,
+    "profit": -1.0,
+    "cumulative_profit": 191.0
+  },
+  {
+    "entry_date": "2021-04-01",
+    "entry_price": 45.0,
+    "exit_date": "2021-04-17",
+    "exit_price": 46.0,
+    "profit": 1.0,
+    "cumulative_profit": 192.0
+  },
+  {
+    "entry_date": "2021-05-03",
+    "entry_price": 40.0,
+    "exit_date": "2021-05-15",
+    "exit_price": 40.0,
+    "profit": 0.0,
+    "cumulative_profit": 192.0
+  },
+  {
+    "entry_date": "2021-05-17",
+    "entry_price": 42.0,
+    "exit_date": "2021-05-18",
+    "exit_price": 40.0,
+    "profit": -2.0,
+    "cumulative_profit": 190.0
+  },
+  {
+    "entry_date": "2021-05-29",
+    "entry_price": 39.0,
+    "exit_date": "2021-06-13",
+    "exit_price": 42.0,
+    "profit": 3.0,
+    "cumulative_profit": 193.0
+  },
+  {
+    "entry_date": "2021-07-04",
+    "entry_price": 40.0,
+    "exit_date": "2021-07-28",
+    "exit_price": 44.0,
+    "profit": 4.0,
+    "cumulative_profit": 197.0
+  },
+  {
+    "entry_date": "2021-08-07",
+    "entry_price": 45.0,
+    "exit_date": "2021-08-13",
+    "exit_price": 43.0,
+    "profit": -2.0,
+    "cumulative_profit": 195.0
+  },
+  {
+    "entry_date": "2021-08-15",
+    "entry_price": 44.0,
+    "exit_date": "2021-08-16",
+    "exit_price": 43.0,
+    "profit": -1.0,
+    "cumulative_profit": 194.0
+  },
+  {
+    "entry_date": "2021-08-20",
+    "entry_price": 44.0,
+    "exit_date": "2021-08-25",
+    "exit_price": 44.0,
+    "profit": 0.0,
+    "cumulative_profit": 194.0
+  },
+  {
+    "entry_date": "2021-09-17",
+    "entry_price": 41.0,
+    "exit_date": "2021-09-20",
+    "exit_price": 39.0,
+    "profit": -2.0,
+    "cumulative_profit": 192.0
+  },
+  {
+    "entry_date": "2021-09-24",
+    "entry_price": 41.0,
+    "exit_date": "2021-10-14",
+    "exit_price": 54.0,
+    "profit": 13.0,
+    "cumulative_profit": 205.0
+  },
+  {
+    "entry_date": "2021-10-28",
+    "entry_price": 57.0,
+    "exit_date": "2021-11-19",
+    "exit_price": 59.0,
+    "profit": 2.0,
+    "cumulative_profit": 207.0
+  },
+  {
+    "entry_date": "2021-12-01",
+    "entry_price": 58.0,
+    "exit_date": "2021-12-25",
+    "exit_price": 93.0,
+    "profit": 35.0,
+    "cumulative_profit": 242.0
+  },
+  {
+    "entry_date": "2022-01-30",
+    "entry_price": 49.0,
+    "exit_date": "2022-02-07",
+    "exit_price": 49.0,
+    "profit": 0.0,
+    "cumulative_profit": 242.0
+  },
+  {
+    "entry_date": "2022-02-08",
+    "entry_price": 51.0,
+    "exit_date": "2022-02-11",
+    "exit_price": 50.0,
+    "profit": -1.0,
+    "cumulative_profit": 241.0
+  },
+  {
+    "entry_date": "2022-02-12",
+    "entry_price": 51.0,
+    "exit_date": "2022-02-19",
+    "exit_price": 51.0,
+    "profit": 0.0,
+    "cumulative_profit": 241.0
+  },
+  {
+    "entry_date": "2022-03-11",
+    "entry_price": 46.0,
+    "exit_date": "2022-03-28",
+    "exit_price": 46.0,
+    "profit": 0.0,
+    "cumulative_profit": 241.0
+  },
+  {
+    "entry_date": "2022-04-20",
+    "entry_price": 47.0,
+    "exit_date": "2022-05-07",
+    "exit_price": 48.0,
+    "profit": 1.0,
+    "cumulative_profit": 242.0
+  },
+  {
+    "entry_date": "2022-05-29",
+    "entry_price": 43.0,
+    "exit_date": "2022-06-13",
+    "exit_price": 44.0,
+    "profit": 1.0,
+    "cumulative_profit": 243.0
+  },
+  {
+    "entry_date": "2022-06-18",
+    "entry_price": 46.0,
+    "exit_date": "2022-06-22",
+    "exit_price": 43.0,
+    "profit": -3.0,
+    "cumulative_profit": 240.0
+  },
+  {
+    "entry_date": "2022-07-08",
+    "entry_price": 42.0,
+    "exit_date": "2022-07-20",
+    "exit_price": 42.0,
+    "profit": 0.0,
+    "cumulative_profit": 240.0
+  },
+  {
+    "entry_date": "2022-08-05",
+    "entry_price": 41.0,
+    "exit_date": "2022-08-24",
+    "exit_price": 52.0,
+    "profit": 11.0,
+    "cumulative_profit": 251.0
+  },
+  {
+    "entry_date": "2022-09-02",
+    "entry_price": 54.0,
+    "exit_date": "2022-09-07",
+    "exit_price": 52.0,
+    "profit": -2.0,
+    "cumulative_profit": 249.0
+  },
+  {
+    "entry_date": "2022-09-09",
+    "entry_price": 53.0,
+    "exit_date": "2022-09-17",
+    "exit_price": 53.0,
+    "profit": 0.0,
+    "cumulative_profit": 249.0
+  },
+  {
+    "entry_date": "2022-09-21",
+    "entry_price": 54.0,
+    "exit_date": "2022-10-02",
+    "exit_price": 55.0,
+    "profit": 1.0,
+    "cumulative_profit": 250.0
+  },
+  {
+    "entry_date": "2022-10-27",
+    "entry_price": 51.0,
+    "exit_date": "2022-10-28",
+    "exit_price": 50.0,
+    "profit": -1.0,
+    "cumulative_profit": 249.0
+  },
+  {
+    "entry_date": "2022-11-02",
+    "entry_price": 50.0,
+    "exit_date": "2022-12-06",
+    "exit_price": 66.0,
+    "profit": 16.0,
+    "cumulative_profit": 265.0
+  },
+  {
+    "entry_date": "2022-12-25",
+    "entry_price": 59.0,
+    "exit_date": "2022-12-31",
+    "exit_price": 56.0,
+    "profit": -3.0,
+    "cumulative_profit": 262.0
+  },
+  {
+    "entry_date": "2023-01-13",
+    "entry_price": 56.0,
+    "exit_date": "2023-02-01",
+    "exit_price": 65.0,
+    "profit": 9.0,
+    "cumulative_profit": 271.0
+  },
+  {
+    "entry_date": "2023-02-28",
+    "entry_price": 46.0,
+    "exit_date": "2023-03-05",
+    "exit_price": 43.0,
+    "profit": -3.0,
+    "cumulative_profit": 268.0
+  },
+  {
+    "entry_date": "2023-03-31",
+    "entry_price": 35.0,
+    "exit_date": "2023-04-16",
+    "exit_price": 38.0,
+    "profit": 3.0,
+    "cumulative_profit": 271.0
+  },
+  {
+    "entry_date": "2023-05-04",
+    "entry_price": 33.0,
+    "exit_date": "2023-06-10",
+    "exit_price": 37.0,
+    "profit": 4.0,
+    "cumulative_profit": 275.0
+  },
+  {
+    "entry_date": "2023-06-19",
+    "entry_price": 37.0,
+    "exit_date": "2023-07-02",
+    "exit_price": 38.0,
+    "profit": 1.0,
+    "cumulative_profit": 276.0
+  },
+  {
+    "entry_date": "2023-07-04",
+    "entry_price": 40.0,
+    "exit_date": "2023-07-16",
+    "exit_price": 43.0,
+    "profit": 3.0,
+    "cumulative_profit": 279.0
+  },
+  {
+    "entry_date": "2023-07-24",
+    "entry_price": 44.0,
+    "exit_date": "2023-08-15",
+    "exit_price": 58.0,
+    "profit": 14.0,
+    "cumulative_profit": 293.0
+  },
+  {
+    "entry_date": "2023-08-16",
+    "entry_price": 59.0,
+    "exit_date": "2023-08-18",
+    "exit_price": 59.0,
+    "profit": 0.0,
+    "cumulative_profit": 293.0
+  },
+  {
+    "entry_date": "2023-08-19",
+    "entry_price": 60.0,
+    "exit_date": "2023-08-21",
+    "exit_price": 58.0,
+    "profit": -2.0,
+    "cumulative_profit": 291.0
+  },
+  {
+    "entry_date": "2023-09-21",
+    "entry_price": 37.0,
+    "exit_date": "2023-10-06",
+    "exit_price": 40.0,
+    "profit": 3.0,
+    "cumulative_profit": 294.0
+  },
+  {
+    "entry_date": "2023-10-12",
+    "entry_price": 47.0,
+    "exit_date": "2023-11-13",
+    "exit_price": 69.0,
+    "profit": 22.0,
+    "cumulative_profit": 316.0
+  },
+  {
+    "entry_date": "2023-11-21",
+    "entry_price": 69.0,
+    "exit_date": "2023-11-22",
+    "exit_price": 67.0,
+    "profit": -2.0,
+    "cumulative_profit": 314.0
+  },
+  {
+    "entry_date": "2024-01-19",
+    "entry_price": 32.0,
+    "exit_date": "2024-01-23",
+    "exit_price": 30.0,
+    "profit": -2.0,
+    "cumulative_profit": 312.0
+  },
+  {
+    "entry_date": "2024-01-26",
+    "entry_price": 31.0,
+    "exit_date": "2024-01-27",
+    "exit_price": 30.0,
+    "profit": -1.0,
+    "cumulative_profit": 311.0
+  },
+  {
+    "entry_date": "2024-02-09",
+    "entry_price": 29.0,
+    "exit_date": "2024-04-14",
+    "exit_price": 84.0,
+    "profit": 55.0,
+    "cumulative_profit": 366.0
+  },
+  {
+    "entry_date": "2024-04-30",
+    "entry_price": 85.0,
+    "exit_date": "2024-05-03",
+    "exit_price": 81.0,
+    "profit": -4.0,
+    "cumulative_profit": 362.0
+  },
+  {
+    "entry_date": "2024-06-11",
+    "entry_price": 53.0,
+    "exit_date": "2024-07-16",
+    "exit_price": 71.0,
+    "profit": 18.0,
+    "cumulative_profit": 380.0
+  },
+  {
+    "entry_date": "2024-09-15",
+    "entry_price": 76.0,
+    "exit_date": "2024-09-28",
+    "exit_price": 85.0,
+    "profit": 9.0,
+    "cumulative_profit": 389.0
+  },
+  {
+    "entry_date": "2024-10-09",
+    "entry_price": 87.0,
+    "exit_date": "2024-10-16",
+    "exit_price": 82.0,
+    "profit": -5.0,
+    "cumulative_profit": 384.0
+  },
+  {
+    "entry_date": "2024-11-08",
+    "entry_price": 77.0,
+    "exit_date": "2024-11-11",
+    "exit_price": 74.0,
+    "profit": -3.0,
+    "cumulative_profit": 381.0
+  },
+  {
+    "entry_date": "2024-11-17",
+    "entry_price": 76.0,
+    "exit_date": "2024-12-12",
+    "exit_price": 86.0,
+    "profit": 10.0,
+    "cumulative_profit": 391.0
+  },
+  {
+    "entry_date": "2024-12-25",
+    "entry_price": 88.0,
+    "exit_date": "2025-01-17",
+    "exit_price": 121.0,
+    "profit": 33.0,
+    "cumulative_profit": 424.0
+  },
+  {
+    "entry_date": "2025-02-04",
+    "entry_price": 97.0,
+    "exit_date": "2025-02-21",
+    "exit_price": 101.0,
+    "profit": 4.0,
+    "cumulative_profit": 428.0
+  },
+  {
+    "entry_date": "2025-05-11",
+    "entry_price": 57.0,
+    "exit_date": "2025-06-08",
+    "exit_price": 64.0,
+    "profit": 7.0,
+    "cumulative_profit": 435.0
+  },
+  {
+    "entry_date": "2025-06-09",
+    "entry_price": 65.0,
+    "exit_date": "2025-06-20",
+    "exit_price": 67.0,
+    "profit": 2.0,
+    "cumulative_profit": 437.0
+  },
+  {
+    "entry_date": "2025-06-21",
+    "entry_price": 69.0,
+    "exit_date": "2025-06-27",
+    "exit_price": 66.0,
+    "profit": -3.0,
+    "cumulative_profit": 434.0
+  },
+  {
+    "entry_date": "2025-06-28",
+    "entry_price": 69.0,
+    "exit_date": "2025-06-29",
+    "exit_price": 70.0,
+    "profit": 1.0,
+    "cumulative_profit": 435.0
+  }
+]

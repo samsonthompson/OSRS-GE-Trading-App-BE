@@ -1,0 +1,149 @@
+[
+  {
+    "ma_period": 5,
+    "num_trades": 178,
+    "total_profit": 667.0,
+    "first_trade": {
+      "entry_date": "2015-06-04",
+      "entry_price": 12.0,
+      "exit_date": "2015-08-10",
+      "exit_price": 6.0,
+      "profit": -6.0,
+      "cumulative_profit": -6.0
+    },
+    "last_trade": {
+      "entry_date": "2025-06-28",
+      "entry_price": 69.0,
+      "exit_date": "2025-06-29",
+      "exit_price": 70.0,
+      "profit": 1.0,
+      "cumulative_profit": 667.0
+    }
+  },
+  {
+    "ma_period": 7,
+    "num_trades": 164,
+    "total_profit": 660.0,
+    "first_trade": {
+      "entry_date": "2015-06-04",
+      "entry_price": 12.0,
+      "exit_date": "2015-08-10",
+      "exit_price": 6.0,
+      "profit": -6.0,
+      "cumulative_profit": -6.0
+    },
+    "last_trade": {
+      "entry_date": "2025-06-28",
+      "entry_price": 69.0,
+      "exit_date": "2025-06-29",
+      "exit_price": 70.0,
+      "profit": 1.0,
+      "cumulative_profit": 660.0
+    }
+  },
+  {
+    "ma_period": 14,
+    "num_trades": 138,
+    "total_profit": 511.0,
+    "first_trade": {
+      "entry_date": "2015-08-03",
+      "entry_price": 5.0,
+      "exit_date": "2015-08-16",
+      "exit_price": 6.0,
+      "profit": 1.0,
+      "cumulative_profit": 1.0
+    },
+    "last_trade": {
+      "entry_date": "2025-06-28",
+      "entry_price": 69.0,
+      "exit_date": "2025-06-29",
+      "exit_price": 70.0,
+      "profit": 1.0,
+      "cumulative_profit": 511.0
+    }
+  },
+  {
+    "ma_period": 20,
+    "num_trades": 115,
+    "total_profit": 435.0,
+    "first_trade": {
+      "entry_date": "2015-08-04",
+      "entry_price": 6.0,
+      "exit_date": "2015-08-22",
+      "exit_price": 6.0,
+      "profit": 0.0,
+      "cumulative_profit": 0.0
+    },
+    "last_trade": {
+      "entry_date": "2025-06-28",
+      "entry_price": 69.0,
+      "exit_date": "2025-06-29",
+      "exit_price": 70.0,
+      "profit": 1.0,
+      "cumulative_profit": 435.0
+    }
+  },
+  {
+    "ma_period": 90,
+    "num_trades": 72,
+    "total_profit": 115.0,
+    "first_trade": {
+      "entry_date": "2015-10-06",
+      "entry_price": 6.0,
+      "exit_date": "2016-01-23",
+      "exit_price": 13.0,
+      "profit": 7.0,
+      "cumulative_profit": 7.0
+    },
+    "last_trade": {
+      "entry_date": "2025-06-02",
+      "entry_price": 66.0,
+      "exit_date": "2025-06-29",
+      "exit_price": 70.0,
+      "profit": 4.0,
+      "cumulative_profit": 115.0
+    }
+  },
+  {
+    "ma_period": 180,
+    "num_trades": 60,
+    "total_profit": 43.0,
+    "first_trade": {
+      "entry_date": "2015-11-03",
+      "entry_price": 9.0,
+      "exit_date": "2016-03-11",
+      "exit_price": 11.0,
+      "profit": 2.0,
+      "cumulative_profit": 2.0
+    },
+    "last_trade": {
+      "entry_date": "2025-03-03",
+      "entry_price": 91.0,
+      "exit_date": "2025-03-09",
+      "exit_price": 89.0,
+      "profit": -2.0,
+      "cumulative_profit": 43.0
+    }
+  },
+  {
+    "ma_period": 365,
+    "num_trades": 50,
+    "total_profit": -2.0,
+    "first_trade": {
+      "entry_date": "2016-05-08",
+      "entry_price": 11.0,
+      "exit_date": "2016-07-14",
+      "exit_price": 10.0,
+      "profit": -1.0,
+      "cumulative_profit": -1.0
+    },
+    "last_trade": {
+      "entry_date": "2024-06-19",
+      "entry_price": 52.0,
+      "exit_date": "2025-03-12",
+      "exit_price": 77.0,
+      "profit": 25.0,
+      "cumulative_profit": -2.0
+    }
+  }
+]
