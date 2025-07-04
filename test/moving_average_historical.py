@@ -24,6 +24,13 @@ for period in periods:
     df[f'bollinger_upper_{period}'] = df[f'ma_{period}'] + 2 * df[f'std_{period}']
     df[f'bollinger_lower_{period}'] = df[f'ma_{period}'] - 2 * df[f'std_{period}']
 
+# Add MACD calculation (12, 26, 9)
+df['ema12'] = df['price'].ewm(span=12, adjust=False).mean()
+df['ema26'] = df['price'].ewm(span=26, adjust=False).mean()
+df['macd'] = df['ema12'] - df['ema26']
+df['macd_signal'] = df['macd'].ewm(span=9, adjust=False).mean()
+df['macd_hist'] = df['macd'] - df['macd_signal']
+
 # Add RSI calculation for selected periods
 rsi_periods = [7, 14]
 def calculate_rsi(series, period):
@@ -57,7 +64,12 @@ for _, row in df.iterrows():
                 'lower': get_scalar(row[f'bollinger_lower_{period}'])
             } for period in periods
         },
-        'rsi': {str(period): get_scalar(row[f'rsi_{period}']) for period in rsi_periods}
+        'rsi': {str(period): get_scalar(row[f'rsi_{period}']) for period in rsi_periods},
+        'macd': {
+            'macd': get_scalar(row['macd']),
+            'signal': get_scalar(row['macd_signal']),
+            'hist': get_scalar(row['macd_hist'])
+        }
     }
     record = {
         'date': dt.strftime('%Y-%m-%d'),
