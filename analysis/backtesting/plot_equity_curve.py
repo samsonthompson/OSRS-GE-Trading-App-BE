@@ -1,34 +1,31 @@
 import json
+import sys
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
 from datetime import datetime
+import os
 
-# Path to your trades JSON file
-TRADES_JSON = 'analysis/backtesting/data/trades_ma_14.json'  # Change period as needed
+# Usage: python plot_equity_curve.py [path/to/equity_curve.json]
 
-# Load trades
-with open(TRADES_JSON, 'r') as f:
-    trades = json.load(f)
+def plot_equity_curve(json_path):
+    with open(json_path, 'r') as f:
+        equity_curve = json.load(f)
+    dates = [datetime.strptime(point['date'], '%Y-%m-%d') for point in equity_curve]
+    equity = [point['equity'] for point in equity_curve]
+    plt.figure(figsize=(12, 6))
+    plt.plot(dates, equity, marker='o', markersize=2, linewidth=1)
+    plt.title(f'Equity Curve\n{os.path.basename(json_path)}')
+    plt.xlabel('Date')
+    plt.ylabel('Equity')
+    plt.grid(True)
+    plt.tight_layout()
+    plt.gcf().autofmt_xdate()
+    plt.show()
 
-# Extract exit dates and cumulative profits
-exit_dates = [datetime.strptime(trade['exit_date'], '%Y-%m-%d') for trade in trades]
-cumulative_profits = [trade['cumulative_profit'] for trade in trades]
-
-# Plot equity curve
-plt.figure(figsize=(12, 6))
-plt.plot(exit_dates, cumulative_profits, marker='o', markersize=3, linewidth=1)
-plt.title('Equity Curve (MA 14)')
-plt.xlabel('Exit Date')
-plt.ylabel('Cumulative Profit')
-
-# Set major x-ticks to yearly
-plt.gca().xaxis.set_major_locator(mdates.YearLocator())
-plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y'))
-
-# Optionally, add vertical lines for each year
-for year in set([d.year for d in exit_dates]):
-    plt.axvline(datetime(year, 1, 1), color='gray', linestyle='--', alpha=0.2)
-
-plt.grid(True)
-plt.tight_layout()
-plt.show()
+if __name__ == "__main__":
+    if len(sys.argv) > 1:
+        json_path = sys.argv[1]
+    else:
+        # Default to a sample file if none provided
+        json_path = 'analysis/backtesting/equity_curve_ma_14_90.json'
+        print(f"No file provided. Using default: {json_path}")
+    plot_equity_curve(json_path)

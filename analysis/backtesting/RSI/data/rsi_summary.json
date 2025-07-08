@@ -1,0 +1,44 @@
+[
+  {
+    "rsi_period": 7,
+    "num_trades": 112,
+    "total_profit": -383.0,
+    "first_trade": {
+      "entry_date": "2015-04-03",
+      "entry_price": 84.0,
+      "exit_date": "2015-06-08",
+      "exit_price": 12.0,
+      "profit": -72.0,
+      "cumulative_profit": -72.0
+    },
+    "last_trade": {
+      "entry_date": "2025-06-20",
+      "entry_price": 67.0,
+      "exit_date": "2025-06-29",
+      "exit_price": 70.0,
+      "profit": 3.0,
+      "cumulative_profit": -383.0
+    }
+  },
+  {
+    "rsi_period": 14,
+    "num_trades": 63,
+    "total_profit": -90.0,
+    "first_trade": {
+      "entry_date": "2015-04-10",
+      "entry_price": 59.0,
+      "exit_date": "2015-06-15",
+      "exit_price": 12.0,
+      "profit": -47.0,
+      "cumulative_profit": -47.0
+    },
+    "last_trade": {
+      "entry_date": "2025-02-26",
+      "entry_price": 91.0,
+      "exit_date": "2025-05-13",
+      "exit_price": 61.0,
+      "profit": -30.0,
+      "cumulative_profit": -90.0
+    }
+  }
+]
