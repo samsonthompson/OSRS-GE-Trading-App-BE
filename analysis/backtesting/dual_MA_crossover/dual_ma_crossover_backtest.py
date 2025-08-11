@@ -2,7 +2,8 @@ import json
 import os
 
 # Path to enriched data (update as needed)
-ENRICHED_DATA_PATH = os.path.join(os.path.dirname(__file__), '../../historical_data_327_enriched.json')
+# From analysis/backtesting/dual_MA_crossover to project root is ../../../
+ENRICHED_DATA_PATH = os.path.join(os.path.dirname(__file__), '../../../historical_data_327_enriched.json')
 BACKTEST_DIR = os.path.dirname(__file__)
 
 # Define pairs of (short, long) MA periods to test
@@ -21,6 +22,18 @@ MA_PAIRS = [
 def load_enriched_data(path=ENRICHED_DATA_PATH):
     with open(path, 'r') as f:
         return json.load(f)
+
+def compute_max_drawdown(equity_curve):
+    peak = float('-inf')
+    max_dd = 0.0
+    for point in equity_curve:
+        equity = point.get('equity', 0.0)
+        if equity > peak:
+            peak = equity
+        drawdown = peak - equity
+        if drawdown > max_dd:
+            max_dd = drawdown
+    return max_dd
 
 def get_ma(row, period):
     return row['indicators']['ma'].get(str(period))
@@ -111,10 +124,24 @@ def main():
         trades, total_profit, equity_curve = run_dual_ma_backtest(data, short, long)
         save_trades_json(trades, short, long)
         save_equity_curve_json(equity_curve, short, long)
+        # Derived metrics
+        num_trades = len(trades)
+        num_wins = sum(1 for t in trades if t['profit'] > 0)
+        num_losses = sum(1 for t in trades if t['profit'] < 0)
+        win_rate = (num_wins / num_trades) if num_trades > 0 else 0.0
+        gross_profit = sum(t['profit'] for t in trades if t['profit'] > 0)
+        gross_loss = -sum(t['profit'] for t in trades if t['profit'] < 0)
+        profit_factor = (gross_profit / gross_loss) if gross_loss > 0 else float('inf') if gross_profit > 0 else 0.0
+        average_profit_per_trade = (total_profit / num_trades) if num_trades > 0 else 0.0
+        max_drawdown = compute_max_drawdown(equity_curve)
         summary.append({
             'short_ma': short,
             'long_ma': long,
-            'num_trades': len(trades),
+            'num_trades': num_trades,
+            'win_rate': win_rate,
+            'profit_factor': profit_factor,
+            'avg_profit_per_trade': average_profit_per_trade,
+            'max_drawdown': max_drawdown,
             'total_profit': total_profit,
             'first_trade': trades[0] if trades else None,
             'last_trade': trades[-1] if trades else None
