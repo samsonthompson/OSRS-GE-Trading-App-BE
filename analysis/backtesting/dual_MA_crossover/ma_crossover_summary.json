@@ -1,0 +1,210 @@
+[
+  {
+    "short_ma": 5,
+    "long_ma": 20,
+    "num_trades": 80,
+    "win_rate": 0.45,
+    "profit_factor": 2.1700680272108843,
+    "avg_profit_per_trade": 2.15,
+    "max_drawdown": 50.0,
+    "total_profit": 172.0,
+    "first_trade": {
+      "entry_date": "2015-09-03",
+      "entry_price": 6.0,
+      "exit_date": "2015-09-18",
+      "exit_price": 5.0,
+      "profit": -1.0,
+      "cumulative_profit": -1.0
+    },
+    "last_trade": {
+      "entry_date": "2025-05-12",
+      "entry_price": 60.0,
+      "exit_date": "2025-06-29",
+      "exit_price": 70.0,
+      "profit": 10.0,
+      "cumulative_profit": 172.0
+    }
+  },
+  {
+    "short_ma": 7,
+    "long_ma": 90,
+    "num_trades": 43,
+    "win_rate": 0.27906976744186046,
+    "profit_factor": 0.4293785310734463,
+    "avg_profit_per_trade": -2.3488372093023258,
+    "max_drawdown": 141.0,
+    "total_profit": -101.0,
+    "first_trade": {
+      "entry_date": "2015-10-09",
+      "entry_price": 7.0,
+      "exit_date": "2016-01-25",
+      "exit_price": 11.0,
+      "profit": 4.0,
+      "cumulative_profit": 4.0
+    },
+    "last_trade": {
+      "entry_date": "2025-06-04",
+      "entry_price": 69.0,
+      "exit_date": "2025-06-29",
+      "exit_price": 70.0,
+      "profit": 1.0,
+      "cumulative_profit": -101.0
+    }
+  },
+  {
+    "short_ma": 14,
+    "long_ma": 90,
+    "num_trades": 38,
+    "win_rate": 0.2631578947368421,
+    "profit_factor": 0.22869955156950672,
+    "avg_profit_per_trade": -4.526315789473684,
+    "max_drawdown": 198.0,
+    "total_profit": -172.0,
+    "first_trade": {
+      "entry_date": "2015-10-11",
+      "entry_price": 8.0,
+      "exit_date": "2016-01-27",
+      "exit_price": 11.0,
+      "profit": 3.0,
+      "cumulative_profit": 3.0
+    },
+    "last_trade": {
+      "entry_date": "2025-06-06",
+      "entry_price": 67.0,
+      "exit_date": "2025-06-29",
+      "exit_price": 70.0,
+      "profit": 3.0,
+      "cumulative_profit": -172.0
+    }
+  },
+  {
+    "short_ma": 20,
+    "long_ma": 90,
+    "num_trades": 36,
+    "win_rate": 0.25,
+    "profit_factor": 0.1991869918699187,
+    "avg_profit_per_trade": -5.472222222222222,
+    "max_drawdown": 237.0,
+    "total_profit": -197.0,
+    "first_trade": {
+      "entry_date": "2015-10-13",
+      "entry_price": 8.0,
+      "exit_date": "2016-01-28",
+      "exit_price": 11.0,
+      "profit": 3.0,
+      "cumulative_profit": 3.0
+    },
+    "last_trade": {
+      "entry_date": "2025-06-08",
+      "entry_price": 64.0,
+      "exit_date": "2025-06-29",
+      "exit_price": 70.0,
+      "profit": 6.0,
+      "cumulative_profit": -197.0
+    }
+  },
+  {
+    "short_ma": 14,
+    "long_ma": 180,
+    "num_trades": 26,
+    "win_rate": 0.11538461538461539,
+    "profit_factor": 0.1111111111111111,
+    "avg_profit_per_trade": -6.153846153846154,
+    "max_drawdown": 179.0,
+    "total_profit": -160.0,
+    "first_trade": {
+      "entry_date": "2015-11-08",
+      "entry_price": 12.0,
+      "exit_date": "2016-03-19",
+      "exit_price": 10.0,
+      "profit": -2.0,
+      "cumulative_profit": -2.0
+    },
+    "last_trade": {
+      "entry_date": "2024-08-30",
+      "entry_price": 74.0,
+      "exit_date": "2025-03-11",
+      "exit_price": 80.0,
+      "profit": 6.0,
+      "cumulative_profit": -160.0
+    }
+  },
+  {
+    "short_ma": 20,
+    "long_ma": 180,
+    "num_trades": 24,
+    "win_rate": 0.16666666666666666,
+    "profit_factor": 0.21739130434782608,
+    "avg_profit_per_trade": -5.25,
+    "max_drawdown": 161.0,
+    "total_profit": -126.0,
+    "first_trade": {
+      "entry_date": "2015-11-10",
+      "entry_price": 13.0,
+      "exit_date": "2016-03-22",
+      "exit_price": 12.0,
+      "profit": -1.0,
+      "cumulative_profit": -1.0
+    },
+    "last_trade": {
+      "entry_date": "2024-09-02",
+      "entry_price": 76.0,
+      "exit_date": "2025-03-13",
+      "exit_price": 74.0,
+      "profit": -2.0,
+      "cumulative_profit": -126.0
+    }
+  },
+  {
+    "short_ma": 90,
+    "long_ma": 180,
+    "num_trades": 11,
+    "win_rate": 0.45454545454545453,
+    "profit_factor": 0.22105263157894736,
+    "avg_profit_per_trade": -6.7272727272727275,
+    "max_drawdown": 143.0,
+    "total_profit": -74.0,
+    "first_trade": {
+      "entry_date": "2015-12-07",
+      "entry_price": 11.0,
+      "exit_date": "2016-04-16",
+      "exit_price": 10.0,
+      "profit": -1.0,
+      "cumulative_profit": -1.0
+    },
+    "last_trade": {
+      "entry_date": "2024-10-05",
+      "entry_price": 72.0,
+      "exit_date": "2025-04-14",
+      "exit_price": 64.0,
+      "profit": -8.0,
+      "cumulative_profit": -74.0
+    }
+  },
+  {
+    "short_ma": 90,
+    "long_ma": 365,
+    "num_trades": 8,
+    "win_rate": 0.125,
+    "profit_factor": 0.017857142857142856,
+    "avg_profit_per_trade": -20.625,
+    "max_drawdown": 203.0,
+    "total_profit": -165.0,
+    "first_trade": {
+      "entry_date": "2016-04-12",
+      "entry_price": 10.0,
+      "exit_date": "2016-12-11",
+      "exit_price": 13.0,
+      "profit": 3.0,
+      "cumulative_profit": 3.0
+    },
+    "last_trade": {
+      "entry_date": "2024-04-10",
+      "entry_price": 100.0,
+      "exit_date": "2025-05-06",
+      "exit_price": 53.0,
+      "profit": -47.0,
+      "cumulative_profit": -165.0
+    }
+  }
+]

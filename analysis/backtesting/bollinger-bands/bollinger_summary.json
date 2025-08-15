@@ -1,0 +1,163 @@
+[
+  {
+    "bollinger_period": 5,
+    "num_trades": 0,
+    "win_rate": 0.0,
+    "profit_factor": 0.0,
+    "avg_profit_per_trade": 0.0,
+    "max_drawdown": 0.0,
+    "total_profit": 0,
+    "first_trade": null,
+    "last_trade": null
+  },
+  {
+    "bollinger_period": 7,
+    "num_trades": 15,
+    "win_rate": 0.6666666666666666,
+    "profit_factor": 2.5,
+    "avg_profit_per_trade": 5.0,
+    "max_drawdown": 52.0,
+    "total_profit": 75.0,
+    "first_trade": {
+      "entry_date": "2015-07-11",
+      "entry_price": 8.0,
+      "exit_date": "2015-08-03",
+      "exit_price": 5.0,
+      "profit": -3.0,
+      "cumulative_profit": -3.0
+    },
+    "last_trade": {
+      "entry_date": "2025-06-20",
+      "entry_price": 67.0,
+      "exit_date": "2025-06-29",
+      "exit_price": 70.0,
+      "profit": 3.0,
+      "cumulative_profit": 75.0
+    }
+  },
+  {
+    "bollinger_period": 14,
+    "num_trades": 37,
+    "win_rate": 0.43243243243243246,
+    "profit_factor": 0.507177033492823,
+    "avg_profit_per_trade": -2.7837837837837838,
+    "max_drawdown": 112.0,
+    "total_profit": -103.0,
+    "first_trade": {
+      "entry_date": "2015-05-26",
+      "entry_price": 13.0,
+      "exit_date": "2015-08-04",
+      "exit_price": 6.0,
+      "profit": -7.0,
+      "cumulative_profit": -7.0
+    },
+    "last_trade": {
+      "entry_date": "2025-06-27",
+      "entry_price": 66.0,
+      "exit_date": "2025-06-29",
+      "exit_price": 70.0,
+      "profit": 4.0,
+      "cumulative_profit": -103.0
+    }
+  },
+  {
+    "bollinger_period": 20,
+    "num_trades": 32,
+    "win_rate": 0.5625,
+    "profit_factor": 0.647887323943662,
+    "avg_profit_per_trade": -1.5625,
+    "max_drawdown": 91.0,
+    "total_profit": -50.0,
+    "first_trade": {
+      "entry_date": "2015-05-29",
+      "entry_price": 12.0,
+      "exit_date": "2015-08-08",
+      "exit_price": 7.0,
+      "profit": -5.0,
+      "cumulative_profit": -5.0
+    },
+    "last_trade": {
+      "entry_date": "2025-02-24",
+      "entry_price": 98.0,
+      "exit_date": "2025-05-14",
+      "exit_price": 62.0,
+      "profit": -36.0,
+      "cumulative_profit": -50.0
+    }
+  },
+  {
+    "bollinger_period": 90,
+    "num_trades": 7,
+    "win_rate": 1.0,
+    "profit_factor": Infinity,
+    "avg_profit_per_trade": 9.857142857142858,
+    "max_drawdown": 19.0,
+    "total_profit": 69.0,
+    "first_trade": {
+      "entry_date": "2015-07-28",
+      "entry_price": 4.0,
+      "exit_date": "2015-10-10",
+      "exit_price": 8.0,
+      "profit": 4.0,
+      "cumulative_profit": 4.0
+    },
+    "last_trade": {
+      "entry_date": "2022-04-16",
+      "entry_price": 42.0,
+      "exit_date": "2022-08-12",
+      "exit_price": 52.0,
+      "profit": 10.0,
+      "cumulative_profit": 69.0
+    }
+  },
+  {
+    "bollinger_period": 180,
+    "num_trades": 7,
+    "win_rate": 1.0,
+    "profit_factor": Infinity,
+    "avg_profit_per_trade": 21.142857142857142,
+    "max_drawdown": 17.0,
+    "total_profit": 148.0,
+    "first_trade": {
+      "entry_date": "2017-10-20",
+      "entry_price": 13.0,
+      "exit_date": "2018-01-07",
+      "exit_price": 27.0,
+      "profit": 14.0,
+      "cumulative_profit": 14.0
+    },
+    "last_trade": {
+      "entry_date": "2023-02-23",
+      "entry_price": 40.0,
+      "exit_date": "2023-07-29",
+      "exit_price": 56.0,
+      "profit": 16.0,
+      "cumulative_profit": 148.0
+    }
+  },
+  {
+    "bollinger_period": 365,
+    "num_trades": 1,
+    "win_rate": 1.0,
+    "profit_factor": Infinity,
+    "avg_profit_per_trade": 24.0,
+    "max_drawdown": 17.0,
+    "total_profit": 24.0,
+    "first_trade": {
+      "entry_date": "2021-04-23",
+      "entry_price": 32.0,
+      "exit_date": "2021-09-30",
+      "exit_price": 56.0,
+      "profit": 24.0,
+      "cumulative_profit": 24.0
+    },
+    "last_trade": {
+      "entry_date": "2021-04-23",
+      "entry_price": 32.0,
+      "exit_date": "2021-09-30",
+      "exit_price": 56.0,
+      "profit": 24.0,
+      "cumulative_profit": 24.0
+    }
+  }
+]

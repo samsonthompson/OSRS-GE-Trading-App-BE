@@ -1,0 +1,10 @@
+[
+  {
+    "entry_date": "2021-04-23",
+    "entry_price": 32.0,
+    "exit_date": "2021-09-30",
+    "exit_price": 56.0,
+    "profit": 24.0,
+    "cumulative_profit": 24.0
+  }
+]
